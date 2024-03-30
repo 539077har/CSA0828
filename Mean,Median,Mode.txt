@@ -1,0 +1,19 @@
+from collections import Counter
+import statistics
+
+def calculate_mean(arr):
+    return sum(arr) / len(arr)
+
+def calculate_median(arr):
+    return statistics.median(arr)
+
+def calculate_mode(arr):
+    return statistics.mode(arr)
+
+if __name__ == "__main__":
+    numbers = [1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9]  
+    print("Array of numbers:", numbers)
+    print("Mean:", calculate_mean(numbers))
+    print("Median:", calculate_median(numbers))
+    print("Mode:", calculate_mode(numbers))
+Mean ,MEdian ,MOde
